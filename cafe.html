@@ -6,35 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cafe webpage</title>
     <style>
+        body{
+            background-image: url("coffee.png" );
+            background-size: 1400px;
+        }
         .container {
             display: flex;
             flex-direction: row;
+            align-items: center;
             background-color: #862d2d;
             height: 50px;
-            width: 1320px;
+            width: 1300px;
+            margin:auto;
             padding: 20px;
             border-radius: 5px;
             color: white;
             font-size: 20px;
-            position: static;
+            position: fixed;
 
         }
+         
+        .btn{
+            background-color: #ffbb99;
+            color: white;
+            height: 40px;
+            margin:15px;
+            border-radius: 5px;
+            position:fixed ;
+            right:10px;
+            top: 25px;
+        }
+        .chat{
+            position: fixed;
+            right: 250px;
+            top: 35px;
+        }
+
+        .search {
+            position: fixed;
+            right: 300px;
+            top: 35px;
+        }
+        .top-left{
+            position: relative;
+            top:250px;
+            left: 16px;
+            color: white;
+        }
+        .btn1{
+            position: absolute;
+            top: 450px;
+            left: 16px;
+            background-color: #ffbb99;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 20px;
+            color: white;
+        }
+        .btn2{
+            position: sticky;
+            bottom: 100px;
+            left: 16px;
+            background-color: transparent;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 20px;
+            color: white;
+        }
+        
+       
     </style>
 </head>
 
 <body>
+    
     <div class="container">
         <img src="coffeelogo.png" height="70px" alt="logo" />
         <h2><b>CAFENOD</b></h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>HOME</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>ABOUT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>SHOP</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>PAGES</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>BLOG</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>HOME</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>ABOUT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>SHOP</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>PAGES</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>BLOG</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <p>CONTACT US</p>
+        <button class="btn">CONTACT US</button>
+        <img src="notification.png" height="30px" alt="chat image" class="chat" />
+        <img src="search.png" height="30px" alt="search image" class="search" />
+       
     </div>
-    <img src="coffee.png" height="885px" alt="coffee image" />
-
+   <div class="top-left">
+    <h1><b>START YOUR DAY WITH A <br> FRESH COFFEE</b></h1>
+    <p>This coffee is brewed by first roasting the green coffee beans ever hot .<br>
+    Coffee is a popular and beloved baverage enjoyed by people around the world</p>
+   </div>
+   <button class="btn1">TASTY COFFEE</button>
+   <button class="btn2">LEARN MORE</button>
 
 </body>
 
